@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
-import Products from '../Components/Products'
+import Products from '../components/Products'
 import { items } from '../context/Data'
 import DataContext from '../context/DataContext'
 import './Product_Detail.css'

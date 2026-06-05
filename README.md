@@ -103,6 +103,3 @@ In future projects and iterations, I want to focus on:
 
 ---
 
-## Acknowledgments
-
-Thanks to the Frontend Mentor community for feedback and inspiration. Special mention to anyone whose solutions helped me think through the cart state management approach.

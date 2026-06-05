@@ -1,0 +1,31 @@
+import React from 'react'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Navbar from './components/Navbar'
+import All_Products from './components/All_Products'
+import Cart from './Pages/Cart'
+import Product_Detail from './Pages/Product_Detail'
+import ProductByCategory from './Pages/ProductByCategory'
+import SearchProduct from './Pages/SearchProduct'
+import TrendingSlider from './components/TrendingSlider'
+
+
+const App = () => {
+  return (
+    <Router>
+      <Navbar/>
+
+      <Routes>        
+        <Route path='/' element={<All_Products/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/product/:id' element={<Product_Detail/>}/>
+        <Route path='/product/category/:cat' element={<ProductByCategory/>}/>
+        <Route path='/products/search/:term' element={<SearchProduct/>}/>
+      </Routes>
+
+      <TrendingSlider/>
+
+    </Router>
+  )
+}
+
+export default App
